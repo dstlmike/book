@@ -1,0 +1,36 @@
+.mainpart {
+  font-family:"montserrat", sans-serif;
+  min-height: 100vh;
+  background:linear-gradient(125deg, #6a89cc, #b8e994);
+  width:100%;
+  position:absolute;
+  text-align: center;
+  color:#343434;
+}
+
+body {
+  margin:0;
+  padding:0;
+  font-family:"montserrat", sans-serif;
+  min-height: 100vh;
+  background:linear-gradient(125deg, #6a89cc, #b8e994);
+}
+
+#big {
+  font-size:160px;
+  font-weight:900;
+  background:url(road.jpg) center no-repeat;
+  color:transparent;
+  -webkit-background-clip:text;
+}
+
+button {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:linear-gradient(45deg, orange, red);
+  color:white;
+  padding:12px 24px;
+  display: inline-block;
+  border-radius:5px;
+  border:none;
+  cursor:pointer;
+}
