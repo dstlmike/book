@@ -5,7 +5,7 @@ const socket = require('socket.io');
 
 app.engine('html', ejs.renderFile);
 app.set('view engine', 'html');
-app.set('views', __dirname + '/public');
+app.set('views', __dirname + '/Public');
 
 app.use(require('express').static(__dirname + '/Public'));
 
