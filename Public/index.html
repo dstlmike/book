@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BookCreator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" ></script>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="/script.js"></script>
+    <nav class="navbar">
+      <button onclick="window.location='/create'" id="create">New Book</button>
+      <button onclick="window.location='/'" id="home">Home</button>
+    </nav>
+    <div class="introduction center">
+      <br>
+      <br>
+      <h2>BookCreator</h2>
+      <br>
+      <p class="italic">Anonymous, writing, poetry.</p>
+      <p>Write anonymously and however you want with BookCreator.
+        Remember, anything is possible.</p>
+      <br>
+      <div id="restriction"></div>
+      <h3>Age Restriction</h3>
+      <br>
+      <p>As you know, age restriction is becoming a problem now. Since you are all anonymous, we have no max and minimum to the age restriction.</p>
+      <p>So we've made "<b>AgeSelector</b>". When writing a book, choosing the audience restrictions is required for the safety of others.</p>
+      <br>
+      <p>Some are in the following:</p>
+      <br>
+      <p>G (Everyone)</p>
+      <p>PG (Parental Guidance)</p>
+      <p>13+ (13 and over)</p>
+      <p>14+ (14 and over)</p>
+      <br>
+      <p><b>More info on this <a href="/restrictions">here</a>.</b></p>
+      <br>
+      <div class="notes">
+        <p>We have removed MA and R for the safety of underage users.</p>
+        <br>
+        <p>Anyway, what are you waiting for? Get searching!</p>
+      </div>
+      <br>
+      <input id="searching" type="search" placeholder="Search..." />
+      <br>
+      <br>
+      <div id="results">
+
+      </div>
+      <br>
+      <br>
+    </div>
+  </body>
+</html>
