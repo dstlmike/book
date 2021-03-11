@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <title>BookCreator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" ></script>
+    <link href="/create/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="/create/script.js"></script>
+    <nav class="navbar">
+      <button onclick="window.location='/create'" id="create">New Book</button>
+      <button onclick="window.location='/'" id="home">Home</button>
+    </nav>
+    <br>
+    <br>
+    <h2 class="center">BookPortal</h2>
+    <br>
+    <div class="addbook" style="margin:15px;">
+      <div class="center">
+        <p>Age Restriction Settings:</p>
+        <br>
+        <a href="https://bookcreator.nonamebyprogram.repl.co/#restriction:~:text=As%20you%20know%2C%20age%20restriction%20is,14%2B%20(14%20and%20over)">What's this?</a>
+        <br>
+        <br>
+        <select id="restriction">
+          <option value="same">--- Choose a restriction. ---</option>
+          <option value="G">G</option>
+          <option value="PG">PG</option>
+          <option value="13+">13+</option>
+          <option value="14+">14+</option>
+        </select>
+        <br>
+        <br>
+        <h3>Title</h3>
+        <br>
+        <br>
+        <input id="title" type="text" placeholder="Your title here..." maxlength="25" />
+        <br>
+        <br>
+        <div class="pages">
+          <div id="page1">
+            <br>
+            <h3>Page 1</h3>
+            <br>
+            <textarea id="page1t" placeholder="Type here..."></textarea>
+          </div>
+        </div>
+        <br>
+        <button id="newpage" title="Create a new page.">+</button>
+        <br>
+        <br>
+        <p style="color:red; display:none;" id="err"></p>
+        <br>
+        <br>
+        <h3>Danger Zone</h3>
+        <div class="dangerzone normal" style="margin:15px; padding:15px;">
+          <p>Delete the last page. No going back.</p>
+          <br>
+          <button id="deletepage" title="Delete the last page.">Delete Last Page</button>
+          <br>
+          <br>
+          <p>Publish your book! After publishing your book, you cannot edit/delete it.</p>
+          <br>
+          <button id="publish" title="Publish your book!">Publish my book!</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
