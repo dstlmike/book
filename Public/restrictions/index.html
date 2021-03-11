@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BookCreator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" ></script>
+    <link href="/restrictions/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <button onclick="window.location='/create'" id="create">New Book</button>
+      <button onclick="window.location='/'" id="home">Home</button>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <h3>Restrictions</h3>
+    <br>
+    <p>Here is how we compare our system to others, so you are informed of what they mean.</p>
+    <br>
+    <table>
+      <tr>
+        <th>Our System</th>
+        <th>Television</th>
+        <th>Movies</th>
+      </tr>
+      <tr>
+        <td>G</td>
+        <td>TV-G / TV-Y</td>
+        <td>G</td>
+      </tr>
+      <tr>
+        <td>PG</td>
+        <td>TV-PG / TV-Y7</td>
+        <td>PG</td>
+      </tr>
+      <tr>
+        <td>13+</td>
+        <td></td>
+        <td>PG-13</td>
+      </tr>
+      <tr>
+        <td>14+</td>
+        <td>TV-14</td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
