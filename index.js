@@ -7,7 +7,7 @@ app.engine('html', ejs.renderFile);
 app.set('view engine', 'html');
 app.set('views', __dirname + '/public');
 
-app.use(require('express').static(__dirname + '/public'));
+app.use(require('express').static(__dirname + '/Public'));
 
 app.get('/', (req, res) => {
 	res.render('index');
