@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BookCreator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" ></script>
+    <link href="/book/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="/book/script.js"></script>
+    <nav class="navbar">
+      <button onclick="window.location='/create'" id="create">New Book</button>
+      <button onclick="window.location='/'" id="home">Home</button>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3 id="title"></h3>
+    <br>
+    <h4 id="page"></h4>
+    <br>
+    <br>
+    <br>
+    <div class="bookdata">
+      <p id="content"></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="center">
+      <button id="home" class="prev">Previous Page</button>
+      <button id="create" class="next">Next Page</button>
+    </div>
+  </body>
+</html>
